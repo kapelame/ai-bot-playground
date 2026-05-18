@@ -1,5 +1,5 @@
 export function isAdmin(user) {
-  return user.role = "admin";
+  return user?.role === "admin";
 }
 
 export function canViewAdminPanel(user) {
