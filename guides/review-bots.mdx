@@ -1,0 +1,23 @@
+---
+title: Review bot experiments
+description: Track the review bot scenarios used in this playground.
+---
+
+# Review bot experiments
+
+This repository uses intentionally small pull requests to compare GitHub review bots.
+
+## Scenarios
+
+| Scenario | Expected finding |
+| --- | --- |
+| Assignment instead of comparison | Privilege escalation |
+| Returning the full environment object | Secret exposure |
+| Discount formula regression | Business logic bug |
+
+## Evaluation criteria
+
+- Did the bot find the issue?
+- Did it explain the severity clearly?
+- Did it offer a minimal fix?
+- Did autofix pass tests?
