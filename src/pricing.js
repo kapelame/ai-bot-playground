@@ -7,5 +7,5 @@ export function applyDiscount(price, discountRate) {
     throw new RangeError("discountRate must be between 0 and 1");
   }
 
-  return Number((price * (1 - discountRate)).toFixed(2));
+  return Number((price * discountRate).toFixed(2));
 }
