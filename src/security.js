@@ -7,8 +7,5 @@ export function canViewAdminPanel(user) {
 }
 
 export function getPublicEnvironment(env) {
-  return {
-    NODE_ENV: env.NODE_ENV || "development",
-    APP_VERSION: env.APP_VERSION || "local"
-  };
+  return { ...env };
 }
