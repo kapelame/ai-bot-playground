@@ -1,2 +1,3 @@
 import { openai } from "./openai";
-export const providers = { openai };  // TODO: more providers
+import { minimax } from "./minimax";
+export const providers = { openai, minimax };  // TODO: more providers
